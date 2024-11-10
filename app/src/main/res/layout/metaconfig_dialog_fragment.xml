@@ -1,0 +1,225 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/frame"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#E0E0E0"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/headding"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text=" Chrome meta config"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#000000" />
+		<ScrollView
+			android:id="@+id/framescroll"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:id="@+id/scrollcore"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/ine1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/sh1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Name:"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/in1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="@android:color/transparent"
+						android:text="My Extension"
+						android:textSize="16sp"
+						android:textColor="#000000"
+						android:hint="Extension name"
+						android:textColorHint="#607D8B"
+						android:singleLine="true"
+						android:imeOptions="actionNext" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ine2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/sh2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Version:"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/in2"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="@android:color/transparent"
+						android:text="1.0.0"
+						android:textSize="18sp"
+						android:textColor="#000000"
+						android:hint="Version"
+						android:textColorHint="#607D8B"
+						android:singleLine="true"
+						android:imeOptions="actionNext" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ine3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/sh3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Author:"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/in3"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="@android:color/transparent"
+						android:text="John Doe"
+						android:textSize="18sp"
+						android:textColor="#000000"
+						android:hint="Author"
+						android:textColorHint="#607D8B"
+						android:singleLine="true"
+						android:imeOptions="actionNext" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ine4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/sh4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Description:"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/in4"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="@android:color/transparent"
+						android:text="Doing some javascript stuff in the background"
+						android:textSize="18sp"
+						android:textColor="#000000"
+						android:hint="Description"
+						android:textColorHint="#607D8B"
+						android:lines="5"
+						android:imeOptions="actionNext" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ine5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/sh5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Manifest Version:"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/in5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="@android:color/transparent"
+						android:text="3"
+						android:textSize="18sp"
+						android:textColor="#000000"
+						android:hint="Browser manifest"
+						android:textColorHint="#607D8B"
+						android:singleLine="true"
+						android:inputType="numberSigned"
+						android:imeOptions="actionNext" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ine6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="8dp"
+					android:padding="8dp"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/sh6"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Action:"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/in6"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="@android:color/transparent"
+						android:text="{\n        &quot;default_popup&quot;: &quot;index.html&quot;,\n        &quot;default_title&quot;: &quot;Latest Covid Report&quot;\n    }"
+						android:textSize="18sp"
+						android:textColor="#000000"
+						android:hint="Extension name"
+						android:textColorHint="#607D8B"
+						android:imeOptions="actionDone" />
+				</LinearLayout>
+				<Button
+					android:id="@+id/savebtn"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Save config"
+					android:textSize="18sp"
+					android:textColor="#000000" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</LinearLayout>
